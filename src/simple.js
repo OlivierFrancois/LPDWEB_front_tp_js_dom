@@ -141,7 +141,6 @@ function howLongIsIt(obj) {
 		obj[key] = obj[key].replace(/ /g, "").length;
 	}
 
-
 	console.log(obj);
 	return obj;
 }
@@ -176,14 +175,14 @@ function howLongIsItTab(tab) {
 	//tab.forEach(obj => howLongIsIt(obj));
 	
 	//Change rien
-	tab.forEach((obj) => {
-		obj = howLongIsIt(Object.create(obj));
-	});
+	//tab.forEach((obj) => {
+	//	obj = howLongIsIt(Object.create(obj));
+	//});
 
 	//Change juste les objets de la shallow copy du tableau
-	// for (let i = 0; i < tab.length; i++) {
-	// 	tab[i] = howLongIsIt(Object.create(tab[i]));
-	// }
+	for (let i = 0; i < tab.length; i++) {
+	 	tab[i] = howLongIsIt(Object.create(tab[i]));
+	}
 
 	return tab;
 }
