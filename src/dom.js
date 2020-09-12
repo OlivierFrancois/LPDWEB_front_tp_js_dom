@@ -34,7 +34,6 @@ h3.innerText = "Hello JS world !";
 workspace.prepend(h3);
 
 
-
 const initTime = 10;
 // Complétez la fonction runChrono pour qu'elle affiche un décompte
 // de n à 0, dans une div (id: counter), placée sous la balise h3 précédemment ajoutée
