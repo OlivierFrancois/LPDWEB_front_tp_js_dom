@@ -49,7 +49,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 .then(response => response.json())
 .then(data => {
 	console.log(data);
-	console.log("Taille en octet : " + JSON.stringify(data).length*2);
+	console.log("Taille en octet : " + JSON.stringify(data).length);
 
 	// Pour chaque ligne de donnée reçue, création d'un tr
 	for(let i = 0; i < data.length; i++) {
